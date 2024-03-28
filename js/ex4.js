@@ -1,16 +1,14 @@
 document.querySelector("form").addEventListener("submit", e => {
   e.preventDefault();
-  const formData = new FormData(e.target);
   
-  fetch("https://thejsway-server.herokuapp.com/animals", {
-    method: "POST",
-    body: formData
-  })
-    .then(response => response.text())
-    .then(result => {
-      document.getElementById("result").textContent = result;
-    })
-    .catch(err => {
-      console.error(err.message);
-    });
+  const htmlTable = document.getElementById('keyValue');
+
+  const userName = document.getElementById("name").value;
+  const userEmail = document.getElementById("email").value;
+  //const userPay = document.getElementById("pmethod").value;
+
+  console.log(userName);
+  console.log(userEmail);
+ // console.log(userPay);
+//Having a hard time getting info, then displaying on table...
 });
