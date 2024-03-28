@@ -1,3 +1,18 @@
 * {
-  font-family: Helvetica;
+  font-family: Calibri, sans-serif;
+}
+
+/* Table Styles */
+table {
+  border: 1px solid black;
+  border-collapse: collapse; /* No double border */
+}
+
+th, td {
+  padding: 5px;
+  border: 1px solid black; /* Border on header and cells */
+}
+
+th {
+  background-color: lightgray;
 }
