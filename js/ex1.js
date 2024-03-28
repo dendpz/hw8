@@ -26,3 +26,6 @@ fetch("https://raw.githubusercontent.com/bpesquet/thejsway/master/resources/pain
     */
     });
   })
+.catch(err => {
+  console.error(err.message);
+});
